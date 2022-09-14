@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ko"  xmlns:th="http://www.thymeleaf.org"
+      xmlns:layout="http://www.w3.org/1999/xhtml" layout:decorate="~{layout_1}">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+<!--    <link rel="stylesheet" type="text/css" th:href="@{/bootstrap.min.css}">-->
+<!--    &lt;!&ndash; Jboard CSS &ndash;&gt;-->
+<!-- <link rel="stylesheet" type="text/css" th:href="@{/style.css}">-->
+<!--    <title>Hello, Jboard!</title>-->
+
+</head>
+<body>
+<div class="" layout:fragment="content" controls style="display:flex;">
+
+<!--    <img th:src = "@{/img/slide-3.jpg}" />-->
+    <video playsinline autoplay muted loop controls style="position: fixed;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -100;
+    transform: translateX(-50%) translateY(-50%); ">
+        <source th:src="@{/video/coca.mp4}" type="video/mp4" >
+    </video>
+
+<!--    <a th:href="@{/question/list}" controls style=" margin-left: auto; margin-right: auto; margin-top: 100px; display: block; padding:10px 10px; text-align:center; background:#000; width:10%; border-radius:15px; color:#fff; text-decolation: none;">JEENYKIM</a>-->
+
+    <a th:href="@{/question/list}" class="btn btn-primary" controls style="top: 50%;
+    left: 50%;  position:absolute;  margin-left:-5%; margin-top:-.5%; display: block; padding:1%; text-align:center; background:rgba(0,0,0,0.7); border-radius:15px; color:skyblue; text-decoration: none; font-size: 1.2rem; ">JEENYKIM</a>
+
+<!--    <p controls style="position:absolute; top: 55%;-->
+<!--    left: 50%; margin-left:-8%; text-align:center; color:pink;  font-size: 1.2rem;">filmed by jeenykimscompany 2011</p>-->
+
+
+
+    <!-- Generated url: https://www.youtube.com/embed/s39mNwFuQDQ?start=212 -->
+<!--    <iframe width="560" height="315" th:src="@{https://www.youtube.com/embed/s39mNwFuQDQ?start=212 (url=${article.video}, start=${article.videoLink})}" frameborder="1" alt="no video attached" allowfullscreen="0"></iframe>-->
+<!--<div>-->
+<!--    <iframe width="560" height="315" th:src="@{https://www.youtube.com/embed/mAjsF4UTg8g (url=${article.video}, videoLink=${article.videoLink})}" frameborder="0" alt="no video attached" allowfullscreen="0"></iframe>-->
+<!--</div>-->
+<!--    <iframe width="560" height="315" th:src="@{https://www.youtube.com/embed/mAjsF4UTg8g" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture}" allowfullscreen></iframe>-->
+<!--</div>-->
+
+
+</body>
+</html>

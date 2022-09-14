@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ko" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<div th:fragment="formErrorsFragment" class="alert alert-danger"
+     role="alert" th:if="${#fields.hasAnyErrors()}">
+    <div th:each="err : ${#fields.allErrors()}" th:text="${err}" />
+<!--    th:fagment-->
+<!--    오류 메시지를 표시하는 공통 템플릿-->
+<!--    웹 페이지의 경우 공통으로 반복되는 영역이 많이 있습니다.-->
+<!--    페이지의 정보를 나타내는 헤더부분, 메뉴 탭을 나타내는 네비게이션 바, 저작권 정보 등을 표시하는 푸터 등 여러 페이지에 거쳐 반복되는 영역이 존재합니다.-->
+<!--    이런 공통의 영역들을 매 페이지의 HTML파일에 반복한다면 각 파일이 지저분해지는 것은 물론이고 변경의 지점 또한 분산되게 됩니다.-->
+<!--    공통의 영역을 분리함으로써 변경지점을 최소화할 수 있어서 변경에 참 용이합니다.-->
+<!--    출력할 오류메시지 부분에 th:fragment="formErrorsFragment" 속성을 추가했다.-->
+<!--    th:each 반복-->
+<!--    th:text문자출력-->
+</div>
+
+
+</body>
+</html>
